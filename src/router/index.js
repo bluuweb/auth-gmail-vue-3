@@ -31,6 +31,12 @@ const routes = [
     name: 'Perfil',
     component: () => import(/* webpackChunkName: "about" */ '../views/Perfil.vue'),
     beforeEnter: requiereAuth
+  },
+  {
+    path: '/crud',
+    name: 'Crud',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Crud.vue'),
+    beforeEnter: requiereAuth
   }
 ]
 
